@@ -1,41 +1,58 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
-<style> 
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-}
-
-div { animation: mymove    5s; 
- position:   absolute;        
-  padding:   30px;      
-   }
-
-@keyframes mymove{
-	0%     {background:red; left:0px;   top:0px;}
-	25%  {background:yellow; left:350px;   top:0px;}
-	50%   {background:green; left:350px; top:350px; transform:rotate(-180deg);}
-	75%     {background:plum; left:0px;   top:350px;}
-	100% {background: red; left:0px; top:0px;}
-}
-div:hover {
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-}
-
-div { animation:mymove   5s  infinite;  }
-</style>
-</head>
-<body>
-
-<div >李国蔚我儿</div>
-
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#box1{
+					border-radius: 25px;
+					border: 2px solid black;
+					padding:50px;
+					width: 350px;
+					height: 350px;
+					
+				}
+			
+			#box2{
+					border-radius: 25px;
+					border: 2px solid black;
+					padding:50px;
+					width: 250px;
+					height: 250px;
+					border-style:dashed;
+				}
+				#box3{
+					border-radius: 25px;
+					border: 2px solid black;
+					width: 250px;
+					height: 250px;
+				}
+				
+				@keyframes movecar{
+					0% {left:20px;top:0px;}
+					25% {left:370px;top:0px}
+					50% {left:370px;top:350px}
+					75% {left:20px;top:350px}
+					100%{left:20px;top:0px}
+					}
+				#car{
+					position:absolute;
+					left:100px;
+					top:80px;
+					animation:movecar 5s infinite
+				}	
+					
+		</style>
+	</head>
+	<body>
+		<div id = "box1">
+			<div id = "box2">
+			
+			<div id = "box3">
+			</div>
+			</div>
+			
+			</div>
+			<div id = "car" ><img src = "img/car.png" width = "80px" height = "80px"></div>
+	</body>
 </html>
