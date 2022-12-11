@@ -1,58 +1,50 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<style>
-			#box1{
-					border-radius: 25px;
-					border: 2px solid black;
-					padding:50px;
-					width: 350px;
-					height: 350px;
-					
-				}
-			
-			#box2{
-					border-radius: 25px;
-					border: 2px solid black;
-					padding:50px;
-					width: 250px;
-					height: 250px;
-					border-style:dashed;
-				}
-				#box3{
-					border-radius: 25px;
-					border: 2px solid black;
-					width: 250px;
-					height: 250px;
-				}
-				
-				@keyframes movecar{
-					0% {left:20px;top:0px;}
-					25% {left:370px;top:0px}
-					50% {left:370px;top:350px}
-					75% {left:20px;top:350px}
-					100%{left:20px;top:0px}
-					}
-				#car{
-					position:absolute;
-					left:100px;
-					top:80px;
-					animation:movecar 5s infinite
-				}	
-					
-		</style>
-	</head>
-	<body>
-		<div id = "box1">
-			<div id = "box2">
-			
-			<div id = "box3">
-			</div>
-			</div>
-			
-			</div>
-			<div id = "car" ><img src = "img/car.png" width = "80px" height = "80px"></div>
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>登陆界面</title>
+        <style>
+            /* 小车 */
+ 
+            .foot{
+                width: 100%;
+                height: 3.57rem;
+                margin-top: 2rem;
+                background-image: url("my host web/images/1.png");
+            }
+            /* 父亲盒子 */
+            .box10
+            { 
+                width:17.85rem;
+                height: 3.57rem;
+                float: left;
+                margin-left: 2rem;
+                transition:width 3s;
+                
+            }
+            #box11 {
+                transition-timing-function:linear;}
+            #box12{
+                float: right;
+                width: 9.28rem;
+                height: 3.57rem;
+                
+            }
+            .box10:hover
+            {
+                width:95%;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="foot">
+            <div class="box10">
+                <div id="box11" >
+                    <div id="box12">
+                        <img src="my host web/images/car.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
